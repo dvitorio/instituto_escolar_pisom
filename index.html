@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instituto Educacional Pison</title>
+  <title>Instituto Educacional Pisom</title>
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -23,10 +23,10 @@
 
 <body>
 
-
   <div class="geral">
     <!--Barra de navegacao-->
     <nav class="navbar navbar-expand-lg navbar-light">
+      <!--Logomarca da escola-->
       <div class="logo">
         <img class="img mx-auto" src="/img/pisom.jpg" alt="" width="50">
         <a class="navbar-brand text-white" href="#"><b>Instituto Educacional Pisom</b></a>
@@ -35,37 +35,53 @@
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link text-white mx-2" href="#">Início <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white mx-2" href="#">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white mx-2" href="#">Educação Infantil</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link text-white mx-2 dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-              aria-expanded="false">
-              Ensino Fundamental
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white mx-2" href="#">Atividades Extracurriculares</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-light nav-link text-secondary" href="#">Espaço restrito</a>
-          </li>
-        </ul>
+      <!--Opções do menu de navegacao-->
+      <div class="menu">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white mx-2" href="#">Início <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white mx-2 dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                Educação infantil
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Berçário</a>
+                <a class="dropdown-item" href="#">Grupo 2 (G2)</a>
+                <a class="dropdown-item" href="#">Grupo 3 (G3)</a>
+                <a class="dropdown-item" href="#">Grupo 4 (G4)</a>
+                <a class="dropdown-item" href="#">Grupo 5 (G5)</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white mx-2 dropdown-toggle" href="#ensinoFundamental" role="button"
+                data-toggle="dropdown" aria-expanded="false">
+                Ensino Fundamental
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">1º Ano</a>
+                <a class="dropdown-item" href="#">2º Ano</a>
+                <a class="dropdown-item" href="#">3º Ano</a>
+                <a class="dropdown-item" href="#">4º Ano</a>
+                <a class="dropdown-item" href="#">5º Ano</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2" href="#">Atividades Extracurriculares</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-light nav-link text-secondary" href="#">Espaço restrito</button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="midiasMenu">
+      <!--Ícones fontawesome-->
+      <div class="ml-5 midiasMenu">
         <i class="fa-brands fa-instagram text-white mx-2"></i>
         <i class="fa-brands fa-x-twitter text-white mx-2"></i>
         <i class="fa-brands fa-whatsapp text-white mx-2"></i>
@@ -75,51 +91,156 @@
 
     <!--Primeira página-->
     <div class="primeiraPagina">
-      <h1 class="frasePrimeiraPagina ml-3 text-white">Construindo futuros brilhantes</h1>
-      <button class="btn btn-lg btn-primary ml-3 shadow">Agende uma visita!</button>
+      <div class="primeiraPaginaBlocoTextos">
+        <h1 class="frasePrimeiraPagina ml-3 text-white">Construindo futuros brilhantes</h1>
+      </div>
+      <div class="border primeiraPaginaBlocoForm mx-2 p-3 rounded">
+        <form action="">
+          <img class="d-block img mx-auto" src="/img/pisom.jpg" width="30">
+          <h6 class="my-3 text-center text-white">Preencha para receber informações e ofertas</h6>
+          <input class="form-control mb-4" type="text" placeholder="Nome completo">
+          <input class="form-control my-4" type="email" placeholder="Seu e-mail principal">
+          <div class="row">
+            <div class="col-xl-6">
+              <input class="form-control mb-2" type="tel" placeholder="Telefone">
+            </div>
+            <div class="col-xl-6">
+              <select class="form-control" name="cidades">
+                <option value="" disabled selected>Cidade</option>
+                <option value="Salvador">Salvador</option>
+                <option value="Camaçari">Camaçari</option>
+                <option value="Lauro de Freitas">Lauro de Freitas</option>
+                <option value="Simões Filho">Simões Filho</option>
+                <option value="Candeias">Candeias</option>
+                <option value="Dias d'Ávila">Dias d'Ávila</option>
+                <option value="Mata de São João">Mata de São João</option>
+                <option value="São Francisco do Conde">São Francisco do Conde</option>
+                <option value="Madre de Deus">Madre de Deus</option>
+                <option value="São Sebastião do Passé">São Sebastião do Passé</option>
+                <option value="Pojuca">Pojuca</option>
+                <option value="Itaparica">Itaparica</option>
+                <option value="Vera Cruz">Vera Cruz</option>
+                <option value="Itaparica">Itaparica</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="my-2 text-white" for="serie">Escolha a Série:</label>
+            <select class="form-control" id="serie" name="serie">
+              <option value="infantil">Educação Infantil</option>
+              <option value="fundamental1">Ensino Fundamental I</option>
+              <option value="fundamental2">Ensino Fundamental II</option>
+              <option value="medio">Ensino Médio</option>
+            </select>
+          </div>
+          <textarea class="form-control my-3" name="" id="" cols="30" rows="3" placeholder="Deixe sua mensagem..."></textarea>
+          <button class="btn btn-success shadow text-white">Agende uma visita!</button>
+        </form>
+      </div>
     </div>
 
-    <!--Seção Sobre-->
-    <div class="container sobre">
-      <h2 class="py-3 text-center text-info">Sobre</h2>
-      <p class="text-justify text-secondary">
-        Bem-vindo ao Instituto Escolar Pisom, um lugar onde o aprendizado é uma jornada emocionante e onde cada criança
-        é
-        valorizada e apoiada em sua busca pelo conhecimento. Fundada há quase 30 anos, a nossa escola tem uma
-        rica tradição de excelência educacional e compromisso com o desenvolvimento integral de nossos alunos.
-      </p>
-      <h5 class="my-4 text-info text-justify">Nossa missão</h5>
-      <p class="text-justify text-secondary">
-        No Instituto Escolar Pisom, nossa missão é proporcionar uma educação de qualidade que nutre o potencial de cada
-        criança, promovendo o crescimento acadêmico, social e emocional. Acreditamos que cada criança é única e tem o
-        poder de fazer a diferença no mundo.
-      </p>
-      <h5 class="mt-4 text-info text-justify">Nossos valores</h5>
-      <ul class="ml-5 text-justify text-secondary">
-        <li class="text-secondary"><b>Excelência Acadêmica</b>: Comprometemo-nos em fornecer um currículo rigoroso e
-          inspirador que desafia nossos alunos a alcançar seu máximo potencial.</li>
-        <li class="text-secondary"><b>Cuidado e Apoio</b>: Criamos um ambiente acolhedor e seguro, onde cada criança se
-          sente valorizada e apoiada.</li>
-        <li class="text-secondary"><b>Colaboração</b>: Fomentamos a colaboração entre alunos, pais e professores,
-          promovendo uma comunidade educacional forte.</li>
-        <li class="text-secondary"><b>Inovação</b>: Abraçamos a inovação e a criatividade para preparar nossos alunos
-          para um mundo em constante mudança.</li>
 
+  </div>
+
+  <!--Seção Sobre-->
+  <div class="container sobre" id="sobre">
+    <h2 class="py-3 text-center text-info">Sobre</h2>
+    <p class="text-justify text-secondary">
+      Bem-vindo ao Instituto Educacional Pisom, um lugar onde o aprendizado é uma jornada emocionante e onde cada
+      criança
+      é
+      valorizada e apoiada em sua busca pelo conhecimento. Fundada há quase 30 anos, a nossa escola tem uma
+      rica tradição de excelência educacional e compromisso com o desenvolvimento integral de nossos alunos.
+    </p>
+    <h5 class="my-4 text-info text-justify">Nossa missão</h5>
+    <p class="text-justify text-secondary">
+      No Instituto Educacional Pisom, nossa missão é proporcionar uma educação de qualidade que nutre o potencial de
+      cada
+      criança, promovendo o crescimento acadêmico, social e emocional. Acreditamos que cada criança é única e tem o
+      poder de fazer a diferença no mundo.
+    </p>
+    <h5 class="mt-4 text-info text-justify">Nossos valores</h5>
+    <ul class="ml-5 text-justify text-secondary">
+      <li class="text-secondary"><b>Excelência Acadêmica</b>: Comprometemo-nos em fornecer um currículo rigoroso e
+        inspirador que desafia nossos alunos a alcançar seu máximo potencial.</li>
+      <li class="text-secondary"><b>Cuidado e Apoio</b>: Criamos um ambiente acolhedor e seguro, onde cada criança se
+        sente valorizada e apoiada.</li>
+      <li class="text-secondary"><b>Colaboração</b>: Fomentamos a colaboração entre alunos, pais e professores,
+        promovendo uma comunidade educacional forte.</li>
+      <li class="text-secondary"><b>Inovação</b>: Abraçamos a inovação e a criatividade para preparar nossos alunos
+        para um mundo em constante mudança.</li>
+
+    </ul>
+    <h5 class="mt-4 text-info text-justify">Nossa equipe</h5>
+    <p class="text-justify text-secondary">
+      A equipe da Pisom é composta por educadores apaixonados e dedicados que têm o compromisso de
+      proporcionar a melhor experiência educacional possível. Nossos professores são experientes e qualificados, e
+      eles trabalham em estreita colaboração com os pais para garantir o sucesso de cada aluno.
+    </p>
+    <h5 class="mt-4 text-info text-justify">Nossas instalações</h5>
+    <p class="text-justify text-secondary">
+      Nossa escola conta com instalações modernas e recursos educacionais de última geração. Temos salas de aula bem
+      equipadas, biblioteca, laboratórios, quadras esportivas e espaços ao ar livre para brincadeiras e atividades
+      físicas
+      <img class="d-block mx-auto my-3 img rounded" src="/img/instalacoes.jpg" alt="">
+    </p>
+    <h5 class="mt-4 text-info text-justify">Compromisso com a comunidade</h5>
+    <p class="text-justify text-secondary">
+      O Instituto Educacional Pisom também se envolve ativamente com a comunidade local, participando de iniciativas
+      sociais e
+      projetos que beneficiam não apenas nossos alunos, mas também a sociedade como um todo.
+      <img class="d-block mx-auto my-3 img rounded" src="/img/infantil_1.jpg" alt="">
+    </p>
+    <p class="text-justify text-secondary">
+      Estamos sempre em busca de novas famílias que queiram fazer parte da nossa comunidade educacional. Se você
+      procura uma escola comprometida com a excelência e o desenvolvimento integral de seu filho, entre em contato
+      conosco para obter mais informações sobre o processo de admissão.
+    </p>
+    <img class="d-block mx-auto my-3 img rounded" src="/img/infantil_2.jpg" alt="">
+    <button class="d-block mb-5 mx-auto mt-3 btn-block btn btn-success w-25"><i class="fa-brands fa-whatsapp"></i>
+      Junte-se a nós!</button>
+  </div>
+
+  <!--Seção Educação Infantil-->
+  <div class="educacaoInfantil pb-3" id="educacaoInfantil">
+    <h2 class="py-4 text-center text-white">Ensino infantil</h2>
+    <div class="container educ_infantil">
+      <p class="mb-4 text-justify text-white">
+        Acreditamos que a educação infantil é o alicerce fundamental para o crescimento e desenvolvimento de cada
+        criança. Nossa abordagem cuidadosamente projetada e nossos professores apaixonados proporcionam um ambiente
+        seguro e estimulante onde os pequenos podem florescer.
+      </p>
+      <h5 class="mb-3 text-white"><b>Nosso compromisso</b></h5>
+      <ul class="text-white">
+        <li class="ml-4 my-1">Proporcionar um ambiente de aprendizado acolhedor e inclusivo onde cada criança se sinta
+          valorizada.</li>
+        <li class="ml-4 my-1">Fomentar o desenvolvimento cognitivo, social, emocional e físico das crianças.</li>
+        <li class="ml-4 my-1">Estimular a curiosidade e a criatividade por meio de atividades lúdicas e interativas.
+        </li>
+        <li class="ml-4 my-1">Construir uma base sólida para futuros sucessos acadêmicos.</li>
       </ul>
-      <h5 class="mt-4 text-info text-justify">Nossa equipe</h5>
-      <p class="text-justify text-secondary">
-        A equipe da Pisom é composta por educadores apaixonados e dedicados que têm o compromisso de
-        proporcionar a melhor experiência educacional possível. Nossos professores são experientes e qualificados, e
-        eles trabalham em estreita colaboração com os pais para garantir o sucesso de cada aluno.
-      </p>
-      <h5 class="mt-4 text-info text-justify">Nossas instalações</h5>
-      <p class="text-justify text-secondary">
-        Nossa escola conta com instalações modernas e recursos educacionais de última geração. Temos salas de aula bem
-        equipadas, biblioteca, laboratórios, quadras esportivas e espaços ao ar livre para brincadeiras e atividades
-        físicas
-        <img class="d-block mx-auto my-3 img rounded" src="/img/instalacoes.jpg" alt="">
-      </p>
+      <h5 class="mb-3 text-dark"><b>Metodologia de ensino</b></h5>
+      <p class="text-justify text-dark">Nossa metodologia de ensino na educação infantil é baseada em princípios
+        pedagógicos comprovados, que incluem
+        o aprendizado por meio de brincadeiras, exploração e interação. Nossos professores são treinados para criar um
+        ambiente que seja ao mesmo tempo educativo e divertido, incentivando as crianças a desenvolverem habilidades
+        essenciais, como a resolução de problemas, a comunicação e a empatia.</p>
+      <button class="btn btn-success d-block mx-auto text-white shadow"><i class="fa-brands fa-whatsapp"></i> Conheça nossa proposta</button>
     </div>
+  </div>
+
+
+  <!--Seção de rodapé -->
+  <footer class="bg-dark rodape">
+    <h6 class="p-2 text-center text-white">&copy; Centro Educacional Pisom</h6>
+    <div class="rodapeMidias">
+      <i class="fa-brands fa-instagram text-white mb-2 py-2 mx-2"></i>
+      <i class="fa-brands fa-x-twitter text-white mb-2 py-2 mx-2"></i>
+      <i class="fa-brands fa-whatsapp text-white mb-2 py-2 mx-2"></i>
+      <i class="fa-brands fa-youtube text-white mb-2 py-2 mx-2"></i>
+    </div>
+    <h6 class="pb-2 text-center text-white">Todos os direitos reservados - 2023</h6>
+  </footer>
   </div>
 
 
